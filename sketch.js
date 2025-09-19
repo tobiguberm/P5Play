@@ -43,7 +43,7 @@ function setup() {
     key.x = 80;
     key.y = 100;
     key.static = true;
-    key.debug = true;
+    key.debug = false;
     key.scale = 0.6;
 
     cliff = new Sprite();
@@ -79,7 +79,7 @@ while (obstacles.length < 3){
     obstacle.scale = 0.2;
     obstacle.addAni('obstaculo','assets/obs0.png');
     obstacle.radius = 20;
-    obstacle.debug = true;
+    obstacle.debug = false;
     obstacle.mass = 0.5;
     obstacle.gravityScale = 0.1;
 
@@ -214,5 +214,6 @@ for(var i = 0; i<obstacles.length; i++){
    }
 
    print(obstacles[0]);
+
 
 }
